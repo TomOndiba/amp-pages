@@ -13,7 +13,38 @@
 	<script async custom-element="amp-list" src="https://cdn.ampproject.org/v0/amp-list-0.1.js"></script>
 	<script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.1.js"></script>
 	<script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script>
-	<link rel="canonical" href="https://example.com"/>
+	<link rel="canonical" href="https://wideservices.gr/wide-services-news/379-parousiasi-tou-kodeproject"/>
+	 <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "NewsArticle",
+      "mainEntityOfPage": "https://wideservices.gr/el/wide-services-news/379-parousiasi-tou-kodeproject",
+      "headline": "Παρουσίαση του Kodeproject",
+      "datePublished": "2016-10-13T15:58:02Z",
+      "dateModified": "2016-10-13T15:58:02Z",
+      "description": "H WIDE Services συμμετείχε με υπερηφάνεια στην παρουσίαση του kodeproject.gr. Της 1η διαδικτυακής πλατφόρμας εκμάθησης κώδικά.",
+      "author": {
+        "@type": "Person",
+        "name": "Yiannis Arapoglou"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "WIDE Services",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "http://cdn.ampproject.org/logo.jpg",
+          "width": 600,
+          "height": 60
+        }
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://ampbyexample.com/img/landscape_lake_1280x857.jpg",
+        "height": 1280,
+        "width": 857
+      }
+    }
+    </script>
 	<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
 	<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 	<style amp-custom>
@@ -25,7 +56,7 @@
 		}
 		.menu_bar {
 			float: left;
-			margin: 20pt;
+			margin: 15pt;
 			background-position: left 16px center;
 			background-repeat: no-repeat;
 			background-image: -webkit-image-set(
@@ -36,6 +67,7 @@
 			text-align: left;
 			padding: 16px;
 			background-size: 30pt;
+			margin-left: 5pt;
 		}
 		.logo > a {
 			float: left;
@@ -78,6 +110,7 @@
 			color: white;
 		}
 		amp-sidebar {
+			font-family: 'Roboto', sans-serif;
 			width: 250px;
 			padding-right: 10px;
 		}
@@ -202,6 +235,7 @@
 			width: 75%;
 		}
 		.footer{
+			font-family: 'Roboto', sans-serif;
 			width: 100%;
 			background-color: #f4f4f4;
 		}
@@ -281,11 +315,11 @@
 		<li>
 			<a href="/">Home</a>
 		</li>
-		<li><a href="/">Latest News</a></li>
-		<li><a href="/">Contact Us</a></li>
-		<li><a href="/">Service &amp; Products</a></li>
+		<li><a href="/">Τελευταία νέα</a></li>
+		<li><a href="/">Η εταιρεία</a></li>
+		<li><a href="/">Υπηρεσίες & Προϊόντα</a></li>
 		<li><a href="/">Portfolio</a></li>
-		<li><a href="/">The Company</a></li>
+		<li><a href="/">Επικοινωνία</a></li>
 		<!-- <li>
 			<amp-fit-text width="220"
 			height="20"
@@ -325,9 +359,9 @@
 					</noscript>
 				</div>
 				<div class="author_name">
-					By <a href="#"><strong>Random Guy</a></strong><br/>
+					By <a href="#"><strong>Yiannis Arapoglou</a></strong><br/>
 					<span class="post_date">
-						12th November, 2016
+						13th October, 2016
 					</span>
 				</div>
 				<div class="clear"></div>
@@ -383,7 +417,7 @@
 	<amp-list width=300
 	height=75
 	layout=responsive
-	src="http://http://35.161.66.28/amp-pages/json/related_articles.json">
+	src="/amp-pages/json/related_articles.json">
 	<template type="amp-mustache">
 		<a class="card related"
 		href={{url}}>
@@ -400,8 +434,13 @@
 	<div class="footer_links">
 		<div class="link">Help and Contact Us</div>
 		<div class="link">Terms of Service</div>
-	</div>
-	<div class="copyright">&copy; WIDE Services </div>
+		<div class="link">Τελευταία νέα</div>
+		<div class="link">Η εταιρεία</div>
+		<div class="link">Υπηρεσίες & Προϊόντα</div>
+		<div class="link">Portfolio</div>
+		<div class="link">Επικοινωνία</div>
+		</div>
+	<div class="copyright">&copy; 2013-2016 WIDE Services </div>
 </div>
 </body>
 </html>
