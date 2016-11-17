@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	<title></title>
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 	<script async src="https://cdn.ampproject.org/v0.js"></script>
 	<script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
 	<script async custom-element="amp-fit-text" src="https://cdn.ampproject.org/v0/amp-fit-text-0.1.js"></script> 
@@ -51,6 +52,9 @@
 		body{
 			font-family: Roboto;
 		}
+		div {
+			text-justify: auto;
+		}
 		.carousel .slide > amp-img > img {
 			object-fit: contain;
 		}
@@ -68,6 +72,7 @@
 			padding: 16px;
 			background-size: 30pt;
 			margin-left: 5pt;
+			margin-top: 20pt;
 		}
 		.logo > a {
 			float: left;
@@ -77,6 +82,7 @@
 			text-transform: uppercase;
 		}
 		.heading {
+			margin-top: 85px;
 			padding-bottom: 8px;
 		}
 		.heading > #summary {
@@ -145,8 +151,9 @@
 		p { padding:5%;
 		}
 		h1{ 
-			padding:5%;
+			padding:3%;
 			margin-bottom: 0pt;
+			margin-top: 0pt;
 		}
 		h4 { padding:5%;
 		}
@@ -227,12 +234,12 @@
 		.author_name{
 			float: left;
 			width: 70%;
-			margin-top: 10pt;
+			margin-top: 20pt;
 			margin-left: 10pt;
 		}
 		.profile_image{
 			border-radius: 50%;
-			width: 75%;
+			width: 100%;
 		}
 		.footer{
 			font-family: 'Roboto', sans-serif;
@@ -258,6 +265,11 @@
 			padding-bottom: 20pt;
 		}
 		.header{
+			z-index:99;
+			position: fixed;
+			top: 0;
+			left: 0;
+			margin-bottom: 10pt;
 			width: 100%;
 			background-color: #f4f4f4;
 			padding-bottom: 10pt;
@@ -296,6 +308,25 @@
 		}
 		amp-list a{
 			background-color: #ffffff;
+		}
+		@media screen and (min-width: 800px){
+			.logo{
+				width: 85%;
+			}
+			.author_image{
+				width: 10%;
+			}
+			.author_name{
+				margin-top: 30pt;
+			}
+			.heading{
+				margin-top: 75px;
+			}
+		}
+		@media screen and (min-width: 1280px){
+			.author_name{
+				margin-top: 40pt;
+			}
 		}
 	</style>
 </head>
